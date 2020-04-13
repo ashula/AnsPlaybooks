@@ -1,0 +1,6 @@
+---
+# tasks file for nc by yum
+- name: install nc 
+  yum:
+    name: nc
+    state: present 

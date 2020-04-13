@@ -1,0 +1,6 @@
+---
+# tasks file for fio by yum 
+- name: remove fio
+  yum:
+    name: fio 
+    state: removed 

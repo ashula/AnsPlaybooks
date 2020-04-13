@@ -1,0 +1,6 @@
+---
+# tasks file for gcc by yum 
+- name: remove gcc
+  yum:
+    name: gcc 
+    state: removed 

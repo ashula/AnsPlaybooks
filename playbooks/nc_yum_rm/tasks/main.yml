@@ -1,0 +1,6 @@
+---
+# tasks file for nc by yum 
+- name: remove nc
+  yum:
+    name: nc 
+    state: removed 

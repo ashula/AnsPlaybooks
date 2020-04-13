@@ -1,0 +1,6 @@
+---
+# tasks file for gcc by yum
+- name: install gcc 
+  yum:
+    name: gcc
+    state: present 

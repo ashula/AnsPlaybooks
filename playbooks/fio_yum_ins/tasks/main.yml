@@ -1,0 +1,6 @@
+---
+# tasks file for fio by yum
+- name: install fio 
+  yum:
+    name: fio
+    state: present 

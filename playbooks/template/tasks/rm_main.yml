@@ -1,0 +1,6 @@
+---
+# tasks file for rm_module by yum 
+- name: remove rm_module
+  yum:
+    name: rm_module 
+    state: removed 

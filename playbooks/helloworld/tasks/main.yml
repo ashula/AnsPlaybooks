@@ -1,0 +1,4 @@
+# tasks fine for helloworld
+- name: Hello World
+  debug:
+    msg: "Hello World."

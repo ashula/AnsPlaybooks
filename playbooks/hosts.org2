@@ -1,0 +1,11 @@
+[host]
+host01 ansible_ssh_host=172.16.251.46
+host02 ansible_ssh_host=172.16.251.74
+host03 ansible_ssh_host=172.16.251.54
+host04 ansible_ssh_host=172.16.251.47
+host05 ansible_ssh_host=172.16.251.69
+host06 ansible_ssh_host=172.16.251.77
+host07 ansible_ssh_host=172.16.251.45
+host08 ansible_ssh_host=172.16.251.80
+host09 ansible_ssh_host=172.16.251.49
+host10 ansible_ssh_host=172.16.251.66

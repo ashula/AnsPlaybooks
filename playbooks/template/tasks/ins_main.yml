@@ -1,0 +1,6 @@
+---
+# tasks file for ins_module by yum
+- name: install ins_module 
+  yum:
+    name: ins_module
+    state: present 

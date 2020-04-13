@@ -1,0 +1,6 @@
+---
+# tasks file for yum_ins
+- name: remove epel-release
+  yum:
+    name: epel-release
+    state: removed 

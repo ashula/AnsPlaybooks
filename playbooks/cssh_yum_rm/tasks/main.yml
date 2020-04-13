@@ -1,0 +1,6 @@
+---
+# tasks file for clusterssh by yum 
+- name: remove clusterssh
+  yum:
+    name: clusterssh 
+    state: removed 
