@@ -1,0 +1,5 @@
+---
+- hosts: test
+  become: true
+  roles:
+    - yum_ins_epel

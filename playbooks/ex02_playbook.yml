@@ -1,0 +1,4 @@
+---
+- hosts: test
+  roles:
+    - yum_test

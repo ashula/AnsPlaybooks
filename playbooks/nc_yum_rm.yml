@@ -1,0 +1,5 @@
+---
+- hosts: test
+  become: true
+  roles:
+    - nc_yum_rm

@@ -1,0 +1,5 @@
+---
+- hosts: test
+  become: true
+  roles:
+    - cssh_yum_rm
