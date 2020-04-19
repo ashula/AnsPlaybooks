@@ -1,5 +1,5 @@
 ---
-- hosts: test
+- hosts: all 
   become: true
   roles:
     - nc_yum_ins
