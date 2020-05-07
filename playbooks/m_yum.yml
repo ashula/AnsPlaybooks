@@ -1,6 +1,6 @@
 - name: list yum with update epel-release 
   gather_facts: no
-  hosts: test 
+  hosts: all 
   become: yes 
   tasks:
     - name: list epel-release

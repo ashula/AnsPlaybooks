@@ -1,0 +1,34 @@
+- name: group hosts by distribution
+  hosts: all 
+  gather_facts: True
+  tasks:
+    - name: create groups based on distro
+      group_by: key={{ ansible_distribution }}
+
+- name: do something to Ubuntu hosts
+  hosts: Ubuntu
+  become: true
+  tasks:
+    - name: install nc 
+      apt: name=netcat
+    - name: debug
+      debug: var={{ ansible_distribution }}
+
+    - name: capture output of id command
+      command: id -un
+      register: login
+    - debug: var=login
+
+- name: do something else to CentOS hosts
+  hosts: CentOS
+  become: true
+  tasks:
+    - name: install nc 
+      yum: name=nc
+    - name: debug
+      debug: var={{ ansible_distribution }}
+
+    - name: capture output of id command
+      command: id -un
+      register: login
+    - debug: var=login

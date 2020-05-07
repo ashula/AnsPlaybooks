@@ -1,0 +1,37 @@
+- name: group hosts by distribution
+  hosts: all 
+  gather_facts: True
+  tasks:
+    - name: create groups based on distro
+      group_by: key={{ ansible_distribution }}
+
+- name: do something to Ubuntu hosts
+  hosts: Ubuntu
+  become: true
+  tasks:
+    - name: debug
+      debug: msg= "Target OS is {{ ansible_distribution }}"
+
+    - name: capture out of id command
+      command: id -un
+      register: login
+    - debug: var=login
+    - name: show inventory_hostname & its variables
+      debug: var=hostvars[inventory_hostname]
+
+- name: do something else to CentOS hosts
+  hosts: CentOS
+  become: true
+  tasks:
+    - name: debug
+      debug: msg= "Target OS is {{ ansible_distribution }}"
+
+    - name: capture output of id command
+      command: id -un
+      register: login
+    - debug: var=login
+    - name: show inventory_hostname & its variables
+      debug: var=hostvars[inventory_hostname]
+
+
+
