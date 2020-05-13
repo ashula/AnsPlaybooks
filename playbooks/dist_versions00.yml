@@ -7,5 +7,5 @@
 
     - name: "{{ ansible_distribution  }}"
       debug: 
-        msg: "{{inventory_hostname}}: {{ ansible_distribution}}-{{ ansible_distribution_version }}"
+        msg: "{{ansible_all_ipv4_addresses}}: {{ ansible_distribution}}-{{ ansible_distribution_version }}"
 
