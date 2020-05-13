@@ -2,6 +2,10 @@
 #
 #   Ansible private Playbooks
 #
+#    Ver-0.20: 12Apr2020, (c) t.m
+#    
+#    1. add hosts.py as python script dynamic inventory.
+#
 #    Ver-0.10: 14Apr2020, (c) t.m
 #
 #    1. $ bash yum.bash module_label  module_name
