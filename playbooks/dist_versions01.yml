@@ -1,0 +1,11 @@
+- name: group hosts by distribution
+  hosts: all 
+  gather_facts: True
+  tasks:
+    - name: create groups based on distro
+      group_by: key={{ ansible_distribution }}
+
+    - name: "{{ ansible_distribution  }}"
+      debug: 
+        msg: "{{ansible_default_ipv4}}: {{ ansible_distribution}}-{{ ansible_distribution_version }}"
+
